@@ -26,3 +26,5 @@ Route::get('/demo', [DemoController::class, 'index']);
 
 Route::get('/user', [UserController::class, 'index']);
 Route::get('/user/{user}', [UserController::class, 'show']);
+Route::post('/user', [UserController::class, 'store']);
+Route::put('/user/{user}', [UserController::class, 'update']);
